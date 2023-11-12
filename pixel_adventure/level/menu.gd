@@ -12,6 +12,6 @@ func on_button_pressed(button_name: String) -> void:
 			transition_screen.fade_in()
 			
 		"Quit":
-			transition_screen.can_quit = true
+			#transition_screen.can_quit = true
+			transition_screen.scene_path = "res://pixel_adventure/level/credits.tscn"
 			transition_screen.fade_in()
-			pass

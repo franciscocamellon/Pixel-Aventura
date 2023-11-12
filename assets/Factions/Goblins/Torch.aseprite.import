@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dqbq5bi7i0o8h"
+path="res://.godot/imported/Torch.aseprite-1a4d29a1142fb14ce47aacbd89f63999.res"
+
+[deps]
+
+source_file="res://assets/Factions/Goblins/Torch.aseprite"
+dest_files=["res://.godot/imported/Torch.aseprite-1a4d29a1142fb14ce47aacbd89f63999.res"]
+
+[params]
+

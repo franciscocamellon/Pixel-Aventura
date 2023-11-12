@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dw2jhb5xyqgx8"
+path="res://.godot/imported/Dead.aseprite-7a1421a44b7386948c166ca03af5b713.res"
+
+[deps]
+
+source_file="res://assets/Dead_and_Fire/Dead/Dead.aseprite"
+dest_files=["res://.godot/imported/Dead.aseprite-7a1421a44b7386948c166ca03af5b713.res"]
+
+[params]
+

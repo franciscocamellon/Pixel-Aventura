@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bwpfpph74a3qx"
+path="res://.godot/imported/main.dialogue-f2b57add02c168e93a77dadf72a771a6.tres"
+
+[deps]
+
+source_file="res://pixel_adventure/dialogs/main.dialogue"
+dest_files=["res://.godot/imported/main.dialogue-f2b57add02c168e93a77dadf72a771a6.tres"]
+
+[params]
+
+defaults=true

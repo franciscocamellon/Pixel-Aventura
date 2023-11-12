@@ -1,21 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7sf1amio27lr"]
+[gd_scene load_steps=9 format=3 uid="uid://b7sf1amio27lr"]
 
 [ext_resource type="Script" path="res://pixel_adventure/level/transition_screen.gd" id="1_10483"]
+[ext_resource type="FontFile" uid="uid://crq2m0ehu4jc7" path="res://assets/kurland.ttf" id="2_dw8t4"]
 
-[sub_resource type="Animation" id="Animation_chal3"]
-resource_name = "fade_in"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Background:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
-}
+[sub_resource type="LabelSettings" id="LabelSettings_4m4xm"]
+font = ExtResource("2_dw8t4")
+font_size = 64
 
 [sub_resource type="Animation" id="Animation_1wunt"]
 length = 0.001
@@ -30,6 +20,33 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Finished:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_chal3"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_gx3ai"]
@@ -47,11 +64,39 @@ tracks/0/keys = {
 "values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_03dkn"]
+resource_name = "finish_fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Finished:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f12a7"]
 _data = {
 "RESET": SubResource("Animation_1wunt"),
 "fade_in": SubResource("Animation_chal3"),
-"fade_out": SubResource("Animation_gx3ai")
+"fade_out": SubResource("Animation_gx3ai"),
+"finish_fade_in": SubResource("Animation_03dkn")
 }
 
 [node name="TransitionScreen" type="CanvasLayer"]
@@ -65,6 +110,24 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0)
+
+[node name="Finished" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.5
+offset_top = -35.5
+offset_right = 190.5
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fim de Jogo!!!"
+label_settings = SubResource("LabelSettings_4m4xm")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 autoplay = "fade_out"

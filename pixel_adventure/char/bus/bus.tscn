@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkmmp6tmvxiwa"]
+
+[ext_resource type="Texture2D" uid="uid://c6ot0kuidrh78" path="res://assets/Factions/bus.png" id="1_uooaw"]
+
+[node name="Bus" type="CharacterBody2D"]
+
+[node name="Texture" type="Sprite2D" parent="."]
+texture = ExtResource("1_uooaw")

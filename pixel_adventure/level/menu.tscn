@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bj1soagjxmvws"]
+[gd_scene load_steps=14 format=3 uid="uid://bj1soagjxmvws"]
 
 [ext_resource type="Script" path="res://pixel_adventure/level/menu.gd" id="1_7cmqt"]
 [ext_resource type="FontFile" uid="uid://crq2m0ehu4jc7" path="res://assets/kurland.ttf" id="1_ej6ex"]
@@ -27,6 +27,10 @@ shadow_offset = Vector2(4, 4)
 [sub_resource type="LabelSettings" id="LabelSettings_ww4ei"]
 font = ExtResource("1_ej6ex")
 font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_y6p1e"]
+font = ExtResource("1_ej6ex")
+font_size = 18
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mqpmw"]
 texture = ExtResource("4_73sld")
@@ -214,12 +218,14 @@ label_settings = SubResource("LabelSettings_ww4ei")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CheckButton" type="CheckButton" parent="ButtonsContainer" groups=["button"]]
+[node name="Settings2" type="Label" parent="ButtonsContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_ej6ex")
-theme_override_font_sizes/font_size = 30
-text = "Música"
-alignment = 2
+text = "- Tecle ENTER para interagir com 
+personagens.
+- Use as teclas ASWD ou teclas
+direcionais para movimentação"
+label_settings = SubResource("LabelSettings_y6p1e")
+vertical_alignment = 1
 
 [node name="Terrain" type="Node2D" parent="."]
 position = Vector2(852, 349)

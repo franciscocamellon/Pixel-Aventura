@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgfhkxser6dsc"]
+
+[ext_resource type="FontFile" uid="uid://crq2m0ehu4jc7" path="res://assets/kurland.ttf" id="1_8cgyp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kyugp"]
+font = ExtResource("1_8cgyp")
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 4
+shadow_offset = Vector2(2, 2)
+
+[node name="Interface" type="CanvasLayer"]
+
+[node name="Score" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 128.0
+offset_bottom = 57.0
+text = "Score: 3"
+label_settings = SubResource("LabelSettings_kyugp")
+vertical_alignment = 1

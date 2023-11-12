@@ -1,0 +1,16 @@
+~ start
+
+Guardião: [[Olá|Bom dia|Fala parça]]... posso ajudar?
+- Quem é você?
+	Guardião: Sou um dos guardiões da cidade.
+	Guardião: Gostaria de aprender algo sobre Maricá?
+	- Sim, claro!
+		% Guardião: Vamos falar sobre reciclagem responsável.
+		% Guardião: Vamos falar sobre a flora da região.
+		% Guardião: Vamos falar sobre a proteção da fauna.
+		% Guardião: Vamos falar sobre a pesca sustentável.
+		- Sim, claro! => END
+		- Não! => END
+	- Não! => END
+- Tchau => END
+=> END
