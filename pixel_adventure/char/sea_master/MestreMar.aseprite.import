@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://duknvptpchl40"
+path="res://.godot/imported/MestreMar.aseprite-eb373bf85b19bf5d148659347c44faed.res"
+
+[deps]
+
+source_file="res://pixel_adventure/char/sea_master/MestreMar.aseprite"
+dest_files=["res://.godot/imported/MestreMar.aseprite-eb373bf85b19bf5d148659347c44faed.res"]
+
+[params]
+

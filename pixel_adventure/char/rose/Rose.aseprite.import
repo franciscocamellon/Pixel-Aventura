@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bixh6fdtfk38l"
+path="res://.godot/imported/Rose.aseprite-0182627613230e874f3a710bc071acac.res"
+
+[deps]
+
+source_file="res://pixel_adventure/char/rose/Rose.aseprite"
+dest_files=["res://.godot/imported/Rose.aseprite-0182627613230e874f3a710bc071acac.res"]
+
+[params]
+

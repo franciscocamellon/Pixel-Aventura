@@ -40,7 +40,7 @@ func animate() -> void:
 		texture.flip_h = true
 		
 	if velocity != Vector2.ZERO:
-		animation.play("run")
+		animation.play("walk_right")
 		return
 	
 	animation.play("idle")

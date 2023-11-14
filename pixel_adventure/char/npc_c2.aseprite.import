@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://ckvqvhrp7ppsu"
+path="res://.godot/imported/npc_c2.aseprite-80c67413a3cad42446be428ac277006d.res"
+
+[deps]
+
+source_file="res://pixel_adventure/char/npc_c2.aseprite"
+dest_files=["res://.godot/imported/npc_c2.aseprite-80c67413a3cad42446be428ac277006d.res"]
+
+[params]
+

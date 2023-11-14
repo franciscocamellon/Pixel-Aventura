@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://ohbcnbv2r4bf"
+path="res://.godot/imported/latinha_lixo.aseprite-b260fe75385462a05d6f011d3ee3c2eb.res"
+
+[deps]
+
+source_file="res://pixel_adventure/decorations/latinha_lixo.aseprite"
+dest_files=["res://.godot/imported/latinha_lixo.aseprite-b260fe75385462a05d6f011d3ee3c2eb.res"]
+
+[params]
+
